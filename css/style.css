@@ -100,3 +100,7 @@ article header h3:hover {
 article p {
 	padding-top: 0px;
 }
+article h4 {
+	font-weight: bold;
+}
+

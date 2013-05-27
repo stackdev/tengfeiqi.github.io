@@ -35,11 +35,14 @@ hgroup {
 	top: -100px;
 }
 .logo {
-	background: url(../img/logo.png) no-repeat 0 0;
+	background: url(../img/logo3.png) no-repeat 0 0;
 	display: inline-block;
 	height: 40px;
 	width: 121px;
 	text-indent: -999px;
+}
+.logo:hover {
+	background: url(../img/logo3.png) no-repeat 0 -40px;
 }
 nav {
 	background: #000;

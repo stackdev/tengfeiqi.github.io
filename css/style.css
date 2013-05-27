@@ -76,8 +76,8 @@ nav ul li {
 	line-height: 42px;
 }
 nav ul li:hover {
-	-webkit-transition: border-color .218s;
-	transition: border-color .218s;
+	-webkit-transition: border-color .418s;
+	transition: border-color .418s;
 	border-bottom: 2px solid #fff;  /*#427fed Google 蓝*/
 	border-color: #fff;
 	text-decoration: none;

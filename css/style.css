@@ -112,11 +112,11 @@ article header h3:hover {
 article p {
 	padding-top: 0px;
 }
-article p a {
+article a {
 	color: #dd1144;
 	font-weight: normal; 
 }
-article p a:hover {
+article a:hover {
 	color: #dd1144;
 }
 article h4 {

@@ -4,19 +4,26 @@
 */
 /*base style*/
 body,div,ul,ol,dl,li,p,header,nav,footer,aside,hgroup,h1,h2,h3,h4,blockquote{ margin: 0; padding: 0;}
+::selection {
+	background: #dd1144;
+	color: white;
+	text-shadow: none;
+	opacity: 0.9;
+}
 body { 
 	background: #f5f5f5;
 	padding-top: 44px;
 	font-family: "微软雅黑";
 }
 a {
-	color: #333;
+	color: #fff;
 	text-decoration: none;
+	font-weight: bold;
 }
 a:hover {
 	-webkit-transition: color .218s;
 	transition: color .218s;
-	color: #427fed;
+	color: #fff; /* #427fed 蓝色*/
 	cursor: pointer;
 }
 span { font-size: 12px;}
@@ -28,7 +35,7 @@ hgroup {
 	top: -100px;
 }
 nav {
-	background: #fff;
+	background: #dd1144;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -37,6 +44,7 @@ nav {
 	box-sizing: border-box;
 	height: 44px;
 	width: 100%;
+	opacity: 0.9;
 	z-index: 1000;
 }
 
@@ -63,8 +71,8 @@ nav ul li {
 nav ul li:hover {
 	-webkit-transition: border-color .218s;
 	transition: border-color .218s;
-	border-bottom: 2px solid #427fed;
-	border-color: #427fed;
+	border-bottom: 2px solid #fff;  /*#427fed Google 蓝*/
+	border-color: #fff;
 	text-decoration: none;
 }
 
@@ -98,11 +106,18 @@ article header h3 {
 article header h3:hover {
 	-webkit-transition: color .218s;
 	transition: color .218s;
-	color: #427fed;
+	color: #dd1144;
 	cursor: pointer;
 }
 article p {
 	padding-top: 0px;
+}
+article p a {
+	color: #dd1144;
+	font-weight: normal; 
+}
+article p a:hover {
+	color: #dd1144;
 }
 article h4 {
 	font-weight: bold;

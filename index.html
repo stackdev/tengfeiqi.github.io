@@ -21,6 +21,19 @@
 	<section class="content">
 		<article>
 			<header class="article-head">
+				<h3>再来看看JS的作用域</h3>
+				<span>Author:Tengfei</span>
+				<span>Date:2013-05-29</span>
+				<span>Categray: 程序</span>
+				<div class="line"></div>
+				<h4>管理作用域</h4>
+				<p>
+					理解作用域是理解JavaScript的关键，不仅仅从性能角度，而且包括功能角度以及对闭包的理解。作用域对JavaScript有很多影响，从确定哪些变量可以被函数访问，到确定this的取值再到完全理解作用域链。
+				</p>
+			</header>
+		</article>
+		<article>
+			<header class="article-head">
 				<h3>那些年画过的PSD</h3>
 				<span>Author:Tengfei</span>
 				<span>Date:2013-05-20</span>
@@ -28,28 +41,28 @@
 				<div class="line"></div>
 			</header>
 			<p>
-				<img src="upload/usth/index1.png" width="100%" alt="">
+				<img class="lazy" src="img/loading-128.gif" data-src="upload/usth/index1.png" width="100%" alt="">
 			</p>
 			<p>
-				<img src="upload/usth/index2.png" width="100%" alt="">
+				<img class="lazy" src="img/loading-128.gif" data-src="upload/usth/index2.png" width="100%" alt="">
 			</p>
 			<p>
-				<img src="upload/usth/index3.png" width="100%" alt="">
+				<img class="lazy" src="img/loading-128.gif" data-src="upload/usth/index3.png" width="100%" alt="">
 			</p>
 			<p>
-				<img src="upload/usth/index4.png" width="100%" alt="">
+				<img class="lazy" src="img/loading-128.gif" data-src="upload/usth/index4.png" width="100%" alt="">
 			</p>
 			<p>
-				<img src="upload/usth/index5.png" width="100%" alt="">
+				<img class="lazy" src="img/loading-128.gif" data-src="upload/usth/index5.png" width="100%" alt="">
 			</p>
 			<p>
-				<img src="upload/usth/index6.png" width="100%" alt="">
+				<img class="lazy" src="img/loading-128.gif" data-src="upload/usth/index6.png" width="100%" alt="">
 			</p>
 			<p>
-				<img src="upload/usth/index7.png" width="100%" alt="">
+				<img class="lazy" src="img/loading-128.gif" data-src="upload/usth/index7.png" width="100%" alt="">
 			</p>
 			<p>
-				<img src="upload/usth/index8.png" width="100%" alt="">
+				<img class="lazy" src="img/loading-128.gif" data-src="upload/usth/index8.png" width="100%" alt="">
 			</p>
 
 		</article>
@@ -389,7 +402,32 @@
 	<footer>
 		<p>Copyright &copy; 2011 - 2013 QiQi.Me. All Rights Reserved Powered By Github.</p>
 	</footer>
+<script src="js/base.js"></script>
+<script>
+(function($) {
+    var lazyloadImage = function(){
+ 
+        $('img.lazy').each(function(){
+            var distanceToTop = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            var isVisible = distanceToTop - scroll < windowHeight;
+            if (isVisible) {
+                $(this).attr('src', $(this).attr('data-src')).removeClass('lazy');
+            }
+        });
+ 
+    };
+ 
+    $(function(){
+        $(window).scroll(function() {
+            lazyloadImage();
+        });
+    });
+ 
+    lazyloadImage();
 
+})(Tengfei);
+</script>
 </body>
 </html>
-

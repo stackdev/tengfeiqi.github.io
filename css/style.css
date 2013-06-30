@@ -17,6 +17,7 @@ body {
 }
 .pull-right {
 	float: right;
+	margin-left: 10px;
 }
 a {
 	color: #fff;

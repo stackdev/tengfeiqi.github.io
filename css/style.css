@@ -15,6 +15,9 @@ body {
 	padding-top: 44px;
 	font-family: "微软雅黑";
 }
+.pull-right {
+	float: right;
+}
 a {
 	color: #fff;
 	text-decoration: none;

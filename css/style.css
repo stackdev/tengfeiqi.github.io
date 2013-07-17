@@ -61,6 +61,10 @@ nav {
 	opacity: 0.9;
 	z-index: 1000;
 }
+img.lazy {
+	width: 32px;
+	height: 32px;
+}
 
 @media screen and (min-width: 600px) {
 	nav ul {

@@ -20,15 +20,16 @@ body {
 	margin-left: 10px;
 }
 a {
-	color: #fff;
+	color: #d6d6d6;
 	text-decoration: none;
-	font-weight: bold;
+	/*font-weight: bold;*/
 }
 a:hover {
 	-webkit-transition: color .218s;
 	transition: color .218s;
 	color: #fff; /* #427fed 蓝色*/
 	cursor: pointer;
+	font-weight: bold;
 }
 span { font-size: 12px;}
 
